@@ -2,6 +2,8 @@ const Express = require('express');
 const BodyParser = require('body-parser');
 const MongoClient = require('mongodb').MongoClient;
 
+const cors = require('cors');
+
 //get all the libraries needed
 const express = require('express');
 const graphqlHTTP = require('express-graphql');
@@ -32,7 +34,7 @@ app.listen(port, () => {
 		console.log('Connected to `' + DATABASE_NAME + '`!');
 	});
 });
-
+app.use(cors());
 async function count_() {
 	let c = 0;
 	await collection.countDocuments().then((count) => {
@@ -194,5 +196,4 @@ app.use(
 		graphiql: true
 	})
 );
-
 console.log(`GraphQL Server Running at localhost:${port}`);

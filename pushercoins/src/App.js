@@ -15,7 +15,7 @@ class App extends Component {
         this.handleClick = this.handleClick.bind(this)
     }
     handleClick() {
-        axios.get('http://localhost:9292/movies')
+        axios.get('https://chickennem-denzel.glitch.me/movies')
             .then(response => this.setState({ 
                 title: response.data.title, 
                 link: response.data.link, 
