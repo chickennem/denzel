@@ -3,9 +3,41 @@
   "version": "0.0.1",
   "description": "The must-watch Denzel's movies",
   "dependencies": {
+    "async-retry": "^1.2.3",
+    "babel-cli": "^6.26.0",
+    "babel-preset-stage-2": "^6.24.1",
+    "body-parser": "^1.18.3",
     "cheerio": "^1.0.0-rc.2",
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
+    "express-graphql": "^0.7.1",
+    "fs": "0.0.1-security",
+    "graphql": "^14.1.1",
+    "graphql-server-express": "^1.4.0",
+    "graphql-tools": "^4.0.4",
+    "lodash": "^4.17.11",
+    "mongodb": "^3.1.13",
+    "mongoose": "^5.4.19",
     "node-fetch": "^2.3.0",
     "p-limit": "^2.2.0",
     "p-settle": "^2.1.0"
-  }
+  },
+  "main": "app.js",
+  "devDependencies": {
+    "babel-preset-latest": "^6.24.1"
+  },
+  "scripts": {
+    "start": " nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chickennem/denzel.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chickennem/denzel/issues"
+  },
+  "homepage": "https://github.com/chickennem/denzel#readme"
 }

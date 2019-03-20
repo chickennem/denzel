@@ -1,11 +1,14 @@
 /* eslint-disable no-console, no-process-exit */
 const imdb = require('./src/imdb');
+const fs = require('fs');
 const DENZEL_IMDB_ID = 'nm0000243';
 
 async function sandbox (actor) {
   try {
     console.log(`📽️  fetching filmography of ${actor}...`);
     const movies = await imdb(actor);
+
+    fs.writeFileSync('movies.json', JSON.stringify(movies));
     const awesome = movies.filter(movie => movie.metascore >= 77);
 
     console.log(`🍿 ${movies.length} movies found.`);
