@@ -25,7 +25,7 @@
     "babel-preset-latest": "^6.24.1"
   },
   "scripts": {
-    "start": "react_script start ./react"
+    "start": "react_script start"
   },
   "repository": {
     "type": "git",
