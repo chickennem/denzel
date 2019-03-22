@@ -4,8 +4,6 @@
   "description": "The must-watch Denzel's movies",
   "dependencies": {
     "async-retry": "^1.2.3",
-    "babel-cli": "^6.26.0",
-    "babel-preset-stage-2": "^6.24.1",
     "body-parser": "^1.18.3",
     "cheerio": "^1.0.0-rc.2",
     "cors": "^2.8.5",
